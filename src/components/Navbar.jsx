@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { useRef, useEffect, useContext } from 'react'
 import { CarritoContext } from "../context/CarritoContext";
 import Busqueda from './busqueda/Busqueda.jsx';
+import logo from './src/assets/logo/logo_fondo_negro-removebg-preview.png'
+import carritoImg from './src/assets/carrito.png'
 
 
 function Navbar(){    
@@ -56,7 +58,7 @@ function Navbar(){
     return(
         <div className="menu">
             <div className='logo'>
-                <img src="./src/assets/logo/logo_fondo_negro-removebg-preview.png" alt="logo" className='logo-img' />
+                <img src= {logo} alt="logo" className='logo-img' />
                 <div>
                     <h2>DEREN<span>FULL</span></h2>
                     <p>GAMING</p>
@@ -73,7 +75,7 @@ function Navbar(){
             
 
             <div className='container-carrito' ref={carritoRef} >
-                <img src="./src/assets/carrito.png" alt="Carrito" className='carrito' onClick={() => {setMostrarCarrito(prev => !prev)}}/>
+                <img src={carritoImg} alt="Carrito" className='carrito' onClick={() => {setMostrarCarrito(prev => !prev)}}/>
                 <p className='texto-carrito' onClick={() => {setMostrarCarrito(prev => !prev)}}>Carrito</p>
                 <p className='numero-carrito' onClick={() => {setMostrarCarrito(prev => !prev)}}>{totalCantidad}</p>
                 <p className='precio-carrito' onClick={() => {setMostrarCarrito(prev => !prev)}}>${total.toLocaleString()}</p>

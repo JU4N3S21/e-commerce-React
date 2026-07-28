@@ -1,4 +1,5 @@
 import './TopBar.css'
+import camion from './src/assets/iconos/camion.png'
 
 function TopBar(){
     const topMenu = [
@@ -10,7 +11,7 @@ function TopBar(){
     return(
         <div className="top-bar">
             <div className="envio-free">
-                <img src="./src/assets/iconos/camion.png" alt="Envio gratis" />
+                <img src={camion} alt="Envio gratis" />
                 <p>Envio gratis en pedidos superiores a <span>$200.000</span></p>
             </div>
             <ul>
