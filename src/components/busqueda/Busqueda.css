@@ -1,0 +1,27 @@
+.busqueda-container button{
+    border: none;
+    padding: 10px;
+    background-color: var(--color-primario);
+    border-radius: 5px;
+    
+}
+
+.busqueda-container img{
+    width: 14px;
+}
+
+.busqueda-container select{
+    background-color: var(--background);
+    color: #b6b6b6;
+    padding: 10px;
+    border: 0.4px solid  #33384e;
+    font-size: 11px;
+}
+
+.busqueda-container input{
+    background-color: #19192c;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    border: 0.1px solid #33384e;
+}

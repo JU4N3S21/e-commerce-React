@@ -1,0 +1,20 @@
+:root{
+    --color-primario : #0051ff;
+    --background : #000020;
+    --background2 : #181825;
+    --background3 : #1c3066;
+    --color-primario-oscuro : #003cbd;
+    --color-secundario : #4fb0ff;
+    --color-terciario : #cfcfcf;
+    --bordes : #838488;
+    --bordes2 : #4d4d4e;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+

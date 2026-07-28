@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background2);
+}
+
+.container-carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.container-trust{
+    display: flex;
+    justify-content: center;
+}

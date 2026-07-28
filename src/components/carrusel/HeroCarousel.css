@@ -1,0 +1,105 @@
+.hero-carousel{
+    position: relative;
+    background: radial-gradient(circle at 20% 70%, #0f182c 30%, #072c70 70%);
+    color: aliceblue;
+    width: 85%;
+    margin-top: 30px;
+    border: solid 0.2px #3e3e3f;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+}
+
+.texto-pequeno{
+    color: rgb(0, 110, 255);
+}
+
+.span-titulo{
+    color: var(--color-primario);
+}
+
+.hero-carousel h1{
+    max-width: 70%;
+    word-spacing: 4px;
+}
+
+.hero-carousel p{
+    max-width: 75%;
+    line-height: 1.6;
+    word-spacing: 2px;
+}
+
+.hero-carousel img{
+    width: 400px;
+}
+
+.carousel-button{
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 25px;
+    cursor: pointer;
+}
+
+.carousel-button:hover{
+    background-color: var(--color-primario-oscuro);
+}
+
+.span-button{
+    margin-left: 14px;   
+}
+
+
+.banner-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 30%;
+}
+
+.carousel-flecha-derecha{
+    position: absolute;
+    left: 95%;
+}
+
+.carousel-flecha-izquierda{
+    position: absolute;
+    right: 95%;
+}
+
+.carousel-flecha{
+    background-color: #414049;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: wheat;
+    cursor: pointer;
+}
+
+.carousel-flecha:hover{
+    background-color: #38373d;
+}
+
+.indicadores{
+    position: absolute;
+    top: 90%;
+}
+
+.indicador{
+    width: 35px;
+    margin: 14px 10px 8px 10px;
+    height: 4px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.indicador.activo{
+    background-color: var(--color-primario);
+    border: 1px solid rgb(0, 102, 255);
+    outline: 1px solid #0077ff;
+}

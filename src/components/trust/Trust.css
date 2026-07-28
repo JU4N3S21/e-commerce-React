@@ -1,0 +1,40 @@
+.trusts{
+    display: flex;
+    margin: 30px;
+}
+
+.trusts .trust:not(:last-child){
+    border-right: 1px solid var(--bordes);
+    padding-right: 40px;
+}
+
+.trusts .trust:not(:first-child){
+    padding-left: 40px;
+}
+
+.trust{
+    display: grid;
+    grid-template-areas: 
+        "icono titulo"
+        "icono descripcion";
+        column-gap: 14px;
+        row-gap: 4px;
+    align-items: center;
+}
+
+.trust img{
+    width: 30px;
+    grid-area: icono;
+}
+
+.trust h4{
+    color: white;
+    grid-area: titulo;
+}
+
+.trust p{
+    color: var(--color-terciario);
+    grid-area: descripcion;
+    font-size: 14px;
+}
+

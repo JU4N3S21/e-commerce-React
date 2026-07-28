@@ -1,0 +1,40 @@
+.destacados-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenido-destacados{
+    width: fit-content;
+}
+
+.destacados-titulos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h3-catalogo{
+    color: var(--color-secundario);
+    font-size: 15px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 35px;
+}
+
+.destacados-container p{
+    color: var(--color-terciario);
+}
+
+
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat(4, 270px) ;
+    grid-template-rows: repeat(2, 380px);
+    gap: 50px;
+    margin: 40px 20px;
+    justify-content: center;
+}
+

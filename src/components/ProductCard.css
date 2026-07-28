@@ -1,0 +1,76 @@
+.tarjeta-producto{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    gap: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    transition: 0.3s;
+    background-color: #161e42;
+
+    overflow: hidden;
+}
+
+.tarjeta-producto:hover{
+    transform: translateY(-10px);
+}
+
+.tarjeta-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1px solid #3c3c5c;
+
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    
+    background: radial-gradient(circle at 40% 20%, #0f3a8b 30%, #0f182c 70%);
+
+    height: 200px;
+}
+
+.tarjeta-producto img{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.tarjeta-categoria{
+    align-self: flex-start;
+    color: var(--color-secundario);
+    background-color: #0a3b63;
+    padding: 1px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto h2{
+    color: white;
+    font-size: 18px;
+}
+
+.tarjeta-producto h4{
+    color: #606988;
+}
+
+.tarjeta-producto button{
+    border: 0.1px solid #5d5c64;
+    background-color: #038fb9;
+    color: aliceblue;
+    padding: 7px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0px 8px;
+}
+
+.tarjeta-producto button:hover{
+    background-color: #028394;
+}
+
+.span-tarjeta-producto{
+    margin-right: 10px;
+}

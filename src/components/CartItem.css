@@ -1,0 +1,99 @@
+.tarjeta-carritoMini{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    border-top: 1px solid var(--bordes2);
+    padding-top: 10px;
+    margin-left: -9px;
+    margin-right: -9px;
+}
+
+.contenido-tarjeta-carritoMini{
+    display: grid;
+    grid-template-areas: 
+        "icono nombre precio"
+        "icono cantidad subtotal";
+    column-gap: 10px;
+    row-gap: 5px;
+    align-items: center;
+
+    grid-template-columns: 70px minmax(150px, 1fr) 100px;
+}
+
+
+.tarjeta-carritoMini img{
+    grid-area: icono;
+    width: 50px;
+    background-color: #212149;
+    border-radius: 10px;
+    border: 1px solid var(--bordes2);
+    margin-left: 10px;
+}
+
+.carritoMini-nombre{
+    grid-area: nombre;
+    color: white;
+    font-size: 13px;
+}
+
+.carritoMini-precio{
+    grid-area: precio;
+    color: var(--bordes);
+    font-size: 12px;
+}
+
+.carritoMini-subtotal{
+    grid-area: subtotal;
+    color: var(--color-terciario);
+    font-size: 12px;
+}
+
+.button-eliminar{
+    grid-area: eliminar;
+    background-color: transparent;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 10px;
+    color: aliceblue;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.cantidad{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.botonesMasMenos{
+    grid-area: cantidad;
+    border: 1px solid var(--bordes);
+    justify-self: start;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+    padding: 1px 0px;
+}
+
+.button-cantidad{
+    background-color: #212149;
+    border: none;
+    color: white;
+    padding: 0px 4px;
+    cursor: pointer;
+}
+
+.button-cantidad:first-child{
+    border-right: 1px solid var(--bordes2);
+    padding: 0px 6px;
+}
+
+.button-cantidad:last-child{
+    border-left: 1px solid var(--bordes2);
+    font-size: 13px;
+    padding: 0px 5px;
+}
