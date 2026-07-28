@@ -1,5 +1,5 @@
 import './TopBar.css'
-import camion from './src/assets/iconos/camion.png'
+import camion from '../assets/iconos/camion.png'
 
 function TopBar(){
     const topMenu = [

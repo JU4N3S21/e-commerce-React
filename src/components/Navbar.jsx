@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import { useRef, useEffect, useContext } from 'react'
 import { CarritoContext } from "../context/CarritoContext";
 import Busqueda from './busqueda/Busqueda.jsx';
-import logo from './src/assets/logo/logo_fondo_negro-removebg-preview.png'
-import carritoImg from './src/assets/carrito.png'
+import logo from '../assets/logo/logo_fondo_negro-removebg-preview.png'
+import carritoImg from '../assets/carrito.png'
 
 
 function Navbar(){    
