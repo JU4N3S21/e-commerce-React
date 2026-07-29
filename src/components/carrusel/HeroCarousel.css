@@ -103,3 +103,82 @@
     border: 1px solid rgb(0, 102, 255);
     outline: 1px solid #0077ff;
 }
+
+
+@media (max-width: 1024px){
+    .hero-carousel{
+        width: 92%;
+        height: auto;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .hero-carousel img{
+        width: 260px;
+    }
+
+    .banner-contenido{
+        max-width: 55%;
+    }
+
+    .hero-carousel h1{
+        max-width: 100%;
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .hero-carousel{
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 50px 20px 60px 20px;
+        gap: 15px;
+    }
+
+    .banner-contenido{
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .hero-carousel img{
+        width: 220px;
+        order: 3;
+    }
+
+    .hero-carousel img{
+        width: 220px;
+        order: 3;
+    }
+
+    .carousel-flecha-izquierda,
+    .carousel-flecha-derecha{
+        position: static;
+        margin: 0 10px;
+        order: 5;
+    }
+
+    .indicadores{
+        position: static;
+        order: 4;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px){
+    .hero-carousel img{
+        width: 180px;
+    }
+
+    .hero-carousel h1{
+        font-size: 19px;
+    }
+
+    .carousel-button{
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+}

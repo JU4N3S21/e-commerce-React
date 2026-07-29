@@ -41,3 +41,36 @@
     text-decoration: none;
     color: white;
 }
+
+@media (max-width: 768px){
+    .top-bar{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .top-bar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top-bar li:not(:last-child){
+        padding-right: 10px;
+    }
+
+    .top-bar li:not(:first-child){
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .envio-free p{
+        font-size: 11px;
+    }
+
+    .top-bar ul{
+        font-size: 11px;
+    }
+}

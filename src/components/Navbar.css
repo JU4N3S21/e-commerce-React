@@ -7,6 +7,12 @@
     color: aliceblue;
     justify-content: space-between;
     padding: 14px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 900;
+
+    box-shadow: 0 2px 10px #8d8d8d4d;
 }
 
 .menu ul{
@@ -200,4 +206,60 @@
     text-align: center;
     letter-spacing: 5px;
     font-size: 14px;
+}
+
+
+@media (max-width: 768px){
+    .menu{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo carrito"
+            "links links";
+        row-gap: 10px;
+        padding: 10px 14px;
+    }
+
+    .logo{
+        grid-area: logo;
+    }
+
+    .container-carrito{
+        grid-area: carrito;
+    }
+
+    .menu ul{
+        grid-area: links;
+        justify-self: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    
+    .logo-img{
+        width: 38px;
+    }
+
+    .logo h2{
+        font-size: 15px;
+    }
+
+    .logo p{
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .container-carritoMini{
+        width: 90vw;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 480px){
+    .container-carrito p{
+        font-size: 11px;
+    }
+
+    .precio-carrito{
+        font-size: 11px;
+    }
 }

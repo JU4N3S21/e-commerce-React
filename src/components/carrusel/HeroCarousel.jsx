@@ -3,7 +3,7 @@ import carrusel1 from '../../assets/carrusel/carrusel1.png'
 import carrusel2 from '../../assets/carrusel/carrusel2.png'
 import carrusel3 from '../../assets/carrusel/carrusel3.png'
 import carrusel4 from '../../assets/carrusel/carrusel4.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function HeroCarousel (){
     const slides = [
@@ -39,8 +39,20 @@ function HeroCarousel (){
             )
         })
     }
+
+    const [pausado, setPausado] = useState(false);
+
+    useEffect(() => {
+        if (pausado) return; //si pausado es true no sigue la funcion osea no se ejecuta siguiente
+
+        const intervalo = setInterval(() => {
+            siguiente()
+        }, 5000)
+
+        return () => clearInterval(intervalo) // el return del useEffect se ejecuta cuando el componente sale de la pantalla o cuando se finaliza la funcion //la función de limpieza corre antes de cada re-ejecución del efecto, y también una última vez cuando el componente se desmonta
+    }, [pausado]) //cada ves que cambie pausado se ejecuta
     return(
-        <div className="hero-carousel">
+        <div className="hero-carousel" onMouseEnter={() => setPausado(true)} onMouseLeave={() => setPausado(false)}>
             <button className='carousel-flecha-izquierda carousel-flecha' onClick={() => anterior()}>&lt;</button>
             <div className="banner-contenido">
                 <p className='texto-pequeno'>{slideActual.textoPequeno}</p>

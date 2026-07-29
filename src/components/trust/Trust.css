@@ -38,3 +38,43 @@
     font-size: 14px;
 }
 
+@media (max-width: 1024px){
+    .trusts{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 0;
+    }
+
+    .trusts .trust:not(:last-child){
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .trusts .trust:not(:first-child){
+        padding-left: 0;
+    }
+
+    .trust{
+        width: 45%;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px){
+    .trusts{
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trust{
+        width: 100%;
+        max-width: 300px;
+        padding-top: 15px; /* espacio para que la línea no quede pegada al texto */
+    }
+
+    .trust:not(:first-child){
+        border-top: 1px solid var(--bordes);
+    }
+}
