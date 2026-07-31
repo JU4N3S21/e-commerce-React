@@ -94,6 +94,7 @@
     position: absolute;
     top: 43px;
     right: 0;
+    width: 400px;
     background-color: var(--background3);
     border-radius: 10px;
     border: 0.1px solid var(--bordes2);
@@ -211,7 +212,7 @@
 
 @media (max-width: 768px){
     .menu{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         grid-template-areas:
             "logo carrito"
             "links links";
@@ -224,6 +225,7 @@
     }
 
     .container-carrito{
+        position: static;
         grid-area: carrito;
     }
 
@@ -248,9 +250,13 @@
     }
 
     .container-carritoMini{
+        position: absolute;
+        top: 100%; 
+        left: auto;
+        right: 15px; 
+        transform: none;
         width: 90vw;
-        right: 50%;
-        transform: translateX(50%);
+        max-width: 400px;
     }
 }
 
