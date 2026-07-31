@@ -68,7 +68,7 @@ form select{
 }
 
 .metodo{
-    flex:1 1 140px;
+    flex:1 1 110px;
     max-width: 180px;
     border:1px solid #495670;
     border-radius:15px;
@@ -97,10 +97,13 @@ input[type="radio"]:checked + .metodo{
 
 @media (max-width: 480px){
     .metodos-pago{
-        flex-direction: column;
+        flex-direction:row;
+        justify-content: center;
     }
 
     .container-form{
         padding: 15px;
     }
+
+    .metodo{max-width: 110px;}
 }
