@@ -5,7 +5,9 @@
 }
 
 .contenido-destacados{
-    width: fit-content;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0px 30px;
 }
 
 .destacados-titulos{
@@ -31,8 +33,7 @@
 
 .productos-container{
     display: grid;
-    grid-template-columns: repeat(4, 270px) ;
-    grid-template-rows: repeat(2, 380px);
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 50px;
     margin: 40px 20px;
     justify-content: center;

@@ -125,6 +125,22 @@
         max-width: 100%;
         font-size: 24px;
     }
+
+    .carousel-flecha-izquierda,
+    .carousel-flecha-derecha{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-flecha-izquierda{
+        left: 10px;
+        right: auto;
+    }
+
+    .carousel-flecha-derecha{
+        right: 10px;
+        left: auto;
+    }
 }
 
 
@@ -146,25 +162,6 @@
         width: 220px;
         order: 3;
     }
-
-    .hero-carousel img{
-        width: 220px;
-        order: 3;
-    }
-
-    .carousel-flecha-izquierda,
-    .carousel-flecha-derecha{
-        position: static;
-        margin: 0 10px;
-        order: 5;
-    }
-
-    .indicadores{
-        position: static;
-        order: 4;
-        display: flex;
-        justify-content: center;
-    }
 }
 
 
@@ -180,5 +177,13 @@
     .carousel-button{
         padding: 12px 18px;
         font-size: 13px;
+    }
+
+    .carousel-flecha-izquierda{
+        left: 5px;
+    }
+
+    .carousel-flecha-derecha{
+        right: 5px;
     }
 }

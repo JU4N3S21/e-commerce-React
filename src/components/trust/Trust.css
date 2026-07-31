@@ -58,6 +58,14 @@
         width: 45%;
         justify-content: center;
     }
+
+    /* nth-child(n+3): selecciona desde el 3er hijo en adelante.
+       Con 2 columnas, el elemento #3 es el primero de la 2da fila,
+       así que esta línea separa filas, no columnas. */
+    .trust:nth-child(n+3){
+        border-top: 1px solid var(--bordes);
+        padding-top: 15px;
+    }
 }
 
 
@@ -77,4 +85,4 @@
     .trust:not(:first-child){
         border-top: 1px solid var(--bordes);
     }
-}
+}  
