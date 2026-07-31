@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border-top: 1px solid var(--bordes2);
     padding-top: 10px;
     margin-left: -9px;
@@ -19,7 +20,7 @@
     row-gap: 5px;
     align-items: center;
 
-    grid-template-columns: 70px minmax(150px, 1fr) 100px;
+    grid-template-columns: minmax(45px, 70px) minmax(90px, 1fr) minmax(70px, 100px);
 }
 
 .tarjeta-carritoMini-checkout img{
@@ -120,4 +121,21 @@
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+}
+
+
+@media (max-width: 480px){
+    .tarjeta-carritoMini-checkout{
+        font-size: 9px;
+    }
+
+    .contenido-tarjeta-carritoMini{
+        grid-template-columns: 50px minmax(90px, 1fr) 70px;
+        column-gap: 6px;
+    }
+
+    .tarjeta-carritoMini-checkout img{
+        width: 40px;
+        margin-left: 6px;
+    }
 }

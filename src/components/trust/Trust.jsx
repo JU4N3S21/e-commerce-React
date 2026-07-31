@@ -15,7 +15,7 @@ function Trust (){
     return(
         <div className="trusts">
             {trusts.map((trust) => (
-                <div className='trust'>
+                <div key={trust.id} className='trust'>
                     <img src={trust.img} alt={trust.nombre} />
                     <h4>{trust.nombre}</h4>
                     <p>{trust.descripcion}</p>

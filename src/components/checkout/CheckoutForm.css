@@ -62,12 +62,14 @@ form select{
 
 .metodos-pago{
     display:flex;
+    flex-wrap: wrap;
     gap:20px;
     color: #838488;
 }
 
 .metodo{
-    flex:1;
+    flex:1 1 140px;
+    max-width: 180px;
     border:1px solid #495670;
     border-radius:15px;
     padding:25px;
@@ -88,4 +90,17 @@ input[type="radio"]:checked + .metodo{
     border:2px solid #4d7dff;
     background:#162144;
     color:white;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 480px){
+    .metodos-pago{
+        flex-direction: column;
+    }
+
+    .container-form{
+        padding: 15px;
+    }
 }
